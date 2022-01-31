@@ -5,15 +5,10 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
 
 public class CSVFileReader {
-    private String path;
-
     public ArrayList<String> Read(String path) {
-
         ArrayList<String> data = new ArrayList<String>();
-
         try(BufferedReader br = new BufferedReader(new FileReader(path))){
             String line = "";
             while((line = br.readLine()) != null) {

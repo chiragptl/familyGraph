@@ -1,9 +1,8 @@
 package com.mo.exercise.programs;
 
-import java.util.ArrayList;
-
 public class Solution {
     public static void main(String[] args) {
+
         WeightedEdgeGraph people = new WeightedEdgeGraph();
         people.importPeopleFromCSV("src/test/resources/people.csv");
         people.importRelationshipFromCSV("src/test/resources/relationships.csv");
