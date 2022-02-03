@@ -11,18 +11,18 @@ public class Solution {
         String message = "people.csv has 12 rows however collection has: "+ size;
         System.out.println(message);
 
-        Person bob = people.getPersonByKey("bob@bob.com");
-        Person jenny = people.getPersonByKey("jenny@toys.com");
-        Person nigel = people.getPersonByKey("nigel@marketing.com");
-        Person alan = people.getPersonByKey("alan@lonely.org");
+        Person person1 = people.getPersonByKey("bob@bob.com");
+        Person person2 = people.getPersonByKey("jenny@toys.com");
+        Person person3 = people.getPersonByKey("nigel@marketing.com");
+        Person person4 = people.getPersonByKey("alan@lonely.org");
 
-        System.out.println("\nbob has "+bob.getRelationships().size()+" relationships");
-        System.out.println("jenny has "+jenny.getRelationships().size()+" relationships");
-        System.out.println("nigel has "+nigel.getRelationships().size()+" relationships");
-        System.out.println("alan has "+alan.getRelationships().size()+" relationships");
+        System.out.println(person1.getRelationshipCount());
+        System.out.println(person2.getRelationshipCount());
+        System.out.println(person3.getRelationshipCount());
+        System.out.println(person4.getRelationshipCount());
 
-        System.out.println("\njenny has "+people.sizeOfExtendedFamily(jenny)+" family members");
-        System.out.println("bob has "+people.sizeOfExtendedFamily(bob)+" family members");
+        System.out.println(people.sizeOfExtendedFamily(person2));
+        System.out.println(people.sizeOfExtendedFamily(person1));
 
     }
 }

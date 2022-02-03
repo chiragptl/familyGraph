@@ -35,6 +35,9 @@ public class Person {
     public ArrayList<Relationship> getRelationships() {
             return relationships;
         }
+    public String getRelationshipCount() {
+        return this.getName()+" has "+relationships.size()+" reletionships";
+    }
     public void setRelationships(ArrayList<Relationship> relationships) {
             this.relationships = relationships;
         }

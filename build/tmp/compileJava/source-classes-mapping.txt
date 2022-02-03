@@ -1,10 +1,10 @@
-com/mo/exercise/programs/WeightedEdgeGraph.java
- com.mo.exercise.programs.WeightedEdgeGraph
+com/mo/exercise/programs/CSVFileReader.java
+ com.mo.exercise.programs.CSVFileReader
 com/mo/exercise/programs/Person.java
  com.mo.exercise.programs.Person
 com/mo/exercise/programs/Relationship.java
  com.mo.exercise.programs.Relationship
-com/mo/exercise/programs/CSVFileReader.java
- com.mo.exercise.programs.CSVFileReader
+com/mo/exercise/programs/WeightedEdgeGraph.java
+ com.mo.exercise.programs.WeightedEdgeGraph
 com/mo/exercise/programs/Solution.java
  com.mo.exercise.programs.Solution

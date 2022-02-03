@@ -53,9 +53,9 @@ public class WeightedEdgeGraph {
     public Person getPersonByKey(String key) {
             return people.get(key);
         }
-    public int sizeOfExtendedFamily(Person p) {
+    public String sizeOfExtendedFamily(Person p) {
         ArrayList<String> links = computeExtendedFamily(p, new ArrayList<String>());
-        return (int) links.stream().distinct().count();
+        return p.getName()+" has "+ ((int) links.stream().distinct().count()) + " family members";
     }
     private ArrayList<String> computeExtendedFamily(Person person,ArrayList<String> included) {
         included.add(person.getEmail());
